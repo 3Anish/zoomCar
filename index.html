@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoom Car</title>
+    <link rel="icon" href="images/zoom_icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/app.js" defer></script>
+    
+</head>
+<body>
+   
+    <div class="header">
+        <h2 class="heading">CITIES</h2>
+    </div>
+    <div class="container">
+    <div class="topbar">
+       <div class="search">
+           <input type="text" class="input" id="input_field"  placeholder="Search City"/>
+       </div>
+       <div class="checkboxes">
+            <input type="checkbox"  id="hd_enabled" name="hd_enabled" value="true">
+            <label for="hd_enabled"> HD ENABLED</label><br>  
+       </div>
+       <div class="checkboxes">
+            <input type="checkbox"  id="one_way_enabled" name="one_way_enabled" value="true">
+            <label for="one_way_enabled">ONE WAY ENABLED</label><br>  
+       </div>
+    </div>
+    <template id="single-city">
+        
+        <li class="city-item">
+          <img class="city_image">
+          <p></p>
+         
+        </li>
+      </template>
+    
+    <section id="available-cities">
+        <h3>Popular</h3>
+        <ul class="cities" id="cities_id"></ul>
+        <h3>Others</h3>
+        <ul class="other_cities" id="other_cities_id"></ul>
+      </section>
+      </div>
+</body>
+</html>
